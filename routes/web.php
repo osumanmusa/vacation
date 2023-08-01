@@ -8,6 +8,11 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\RedirectAuthenticatedUsersController;
 
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AdminBookingsController;
+use App\Http\Controllers\Admin\AdminUsersController;
+use App\Http\Controllers\Admin\AdminProfileController;
+
 use App\Http\Controllers\RoutesController;
 use App\Http\Controllers\BookingsController;
 use App\Http\Middleware\Authenticate;
@@ -52,12 +57,6 @@ Route::get('/Support', function () {
 Route::get('/Contact', function () {
     return Inertia::render('Contact');
 });
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
 
 
 
@@ -83,6 +82,15 @@ All Admin Routes List
 --------------------------------------------*/
     Route::group(['middleware' => 'checkRole:admin'], function() {
         Route::get("/adminhome", [AdminController::class, "dashboard"])->name('admin.home');
+        Route::get("/admin/bookings", [AdminBookingsController::class, "index"])->name('admin.bookings');
+        Route::get("/admin/view-booking", [AdminBookingsController::class, "show"])->name('admin.view-booking');
+        Route::get("/admin/users", [AdminUsersController::class, "index"])->name('admin.users');
+        Route::get("/admin/view-users", [AdminUsersController::class, "show"])->name('admin.view-users');
+        Route::get("/admin/add-admin", [AdminUsersController::class, "create"])->name('admin.add-admin');
+
+        Route::get('/admin/profile', [AdminProfileController::class, 'edit'])->name('admin.profile.edit');
+        Route::post('/admin/store-profile', [AdminProfileController::class, 'store'])->name('admin.profile.edit');
+
     });
 
 
@@ -99,7 +107,10 @@ All Normal Users Routes List
         ])->name('user.home');
 
         Route::get("/userbookings", [BookingsController::class, "index"])->name('user.bookings');
-
+        Route::get('/userprofile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
 
     });
 

@@ -17,34 +17,37 @@ function toggleMore() {
         <div class="text-2xl bg-opacity-10 rounded-xl mb-32">
             <img
                 id="bgvideo"
-                class="absolute z-10 w-auto min-w-full lg:h-[90vh] brightness-50"
+                class="absolute z-10 w-auto min-w-full lg:h-[90vh] hero-h brightness-50"
                 src="/img/bg-9.png"
                 type="video/mp4" style="border-bottom-right-radius: 300px;"
             />
 
             <Navbar />
-            <div class="flex justify-center visible">
-                <div class="absolute search-top z-40 text-white text-5xl">Choose your preferred hotel</div>
-                <p class="absolute  z-40 search-top mt-20 text-white text-sm"><span class="justify-start px-4" >Las Vegas special Hotel packages</span> <span class="justify-end px-4">2 Nights, 3 days</span> </p>
-                <div class="absolute  z-40 search-top mt-24 flex lg:inline-flex grid flex-wrap justify-center">
-                    <div class="px-10 py-6">
+            <div class="flex justify-center visible t-date">
+                <div class="absolute search-top1 z-40 text-white lg:text-5xl">Choose your preferred hotel</div>
+                <div class="absolute flex pl-10 grid grid-cols-2 mt-20 search-top z-40 ">
+                <div class="justify-start lg:px-4 text-white text-sm" >Las Vegas special Hotel packages</div> 
+                <div class="justify-end lg:pl-16 text-white text-sm">2 Nights, 3 days</div> 
+                </div>
+                <div class="absolute  z-40 search-top lg:mt-24 mt-32 flex inline-flex lg:grid grid-cols-3 flex-wrap justify-center">
+                    <div class="lg:px-10 md:py-6 px-5">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
                         <input type="date" class="border rounded-sm text-sm sm:w-auto px-10 py-3"></div>
-                    <div class="px-10 py-6">
+                    <div class="lg:px-10 md:py-6 px-5">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
-                        <input type="date" class="border rounded-sm text-sm sm:w-auto px-10 py-3 " required></div>
-                    <div class="px-10 py-6">      
+                        <input type="date" class="border rounded-sm text-sm sm:w-auto lg:px-10 py-3 " required></div>
+                    <div class="lg:px-10 md:py-6 px-5">      
                         <button class="text-white btn-red mt-6 font-medium rounded-sm text-sm sm:w-auto px-5 py-2.5 text-center lg:px-28 py-4 px-20"><i class="fa-solid fa-magnifying-glass"></i> Search offers</button>
                     </div>
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <div class="absolute flex grid lg:grid-cols-8 mr-0 z-30 p-cad">
+            <div class="flex justify-center ">
+                <div class="absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-4 py-4">
                     <div class="col-span-1"></div>
 
                     <div
-                        class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                        class="col-span-3 shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full i-md"
                         style="
                             background: url('/img/26.png');
                             background-repeat: no-repeat;
@@ -53,7 +56,7 @@ function toggleMore() {
                     ></div>
 
                     <div
-                        class="col-span-3 pl-10 rounded bg-white shadow-md ml-0 flex flex-col"
+                        class="col-span-3 pl-10  bg-white shadow-md ml-0 flex flex-col"
                     >
                         <h1 class="pt-6 text-3xl">Rio All-Suite Hotel & Casino</h1>
                         <p class="py-2">
@@ -180,12 +183,12 @@ function toggleMore() {
         </div>
     </header>
     <section class="c-text">
-        <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+        <div class="flex justify-center py-6">
+            <div class="flex flex-wrap lg:grid grid-cols-8 mr-0 z-30  px-4 py-4">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -313,12 +316,12 @@ function toggleMore() {
             </div>
         </div>
 
-        <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+        <div class="flex justify-center py-6">
+            <div class="flex flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-4 py-4">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -446,12 +449,12 @@ function toggleMore() {
             </div>
         </div>
 
-        <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+        <div class="flex justify-center py-6">
+            <div class="flex flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-4 py-4">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -579,12 +582,12 @@ function toggleMore() {
             </div>
         </div>
 
-        <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+        <div class="flex justify-center py-6">
+            <div class="flex flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-4 py-4">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -742,11 +745,14 @@ function toggleMore() {
 .green-bg {
     background: #48742c;
 }
+.search-top1{
+    top:30%;
+}
 .search-top{
     top:30%;
 }
 .p-cad {
-    top: 70%;
+    top: 65%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -779,11 +785,39 @@ function toggleMore() {
         margin-top: 15px;
     }
     .p-cad {
-        top: 30%;
+        top: 60%;
+        font-size: 14px;
+        
     }
     .p-text {
         padding-top: calc(5vh + 2rem);
         padding-bottom: 4rem;
     }
+    .search-top1{
+    top:20%;
+    }
+    .search-top{
+    top:18%;
+    }
+    .hero-h{
+        height: 90vh;
+    }
+
+}
+
+@media only screen and (min-width: 1440px)
+{ /* Your Styles... */ 
+    .p-cad {
+    top: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.i-md{
+    height:105vh;
+}
+.t-date{
+ margin-top: 50px;
+}
+
 }
 </style>

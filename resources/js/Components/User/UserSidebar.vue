@@ -46,8 +46,8 @@ const changeSelected = (i) => {
     background: #11191E;
 }
 .selected {
-      background-color: #f6f8f8 !important;
-      color:rgb(39, 128, 201);
+      background-color: rgb(55 65 81);
+      color:#fff;
     }
 .select-highlight {
   position: absolute;

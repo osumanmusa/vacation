@@ -5,15 +5,7 @@ import Footer from "../Components/Footer.vue";
 import { ref, onMounted } from "vue";
 
 
-const currentCNo = ref(0);
-const carts = [
-	{"code": "AF", "code3": "AFG", "name": "Afghanistan", "number": "004"},
-	{"code": "AL", "code3": "ALB", "name": "Albania", "number": "008"},
-	{"code": "DZ", "code3": "DZA", "name": "Algeria", "number": "012"},
-	{"code": "AS", "code3": "ASM", "name": "American Samoa", "number": "016"},
-	{"code": "AD", "code3": "AND", "name": "Andorra", "number": "020"},
-	{"code": "AO", "code3": "AGO", "name": "Angola", "number": "024"},
-];
+
 </script>
 
 <template>
@@ -25,7 +17,7 @@ const carts = [
 <Section class="lg:mx-40">
 
 <div class="grid gap-0  md:grid-cols-2 py-3 px-4"> 
-<div class=" max-w-full p-4 bg-white border shadow-md border-0 ">
+<div class=" max-w-full p-4 bg-white border shadow-sm ">
     <div class="px-6">
     <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">Send us a Message</h5>
    <form> 
