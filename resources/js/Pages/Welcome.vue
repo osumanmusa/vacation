@@ -139,7 +139,7 @@ background: #F4F4F4;;
       display: block;
     }
 
-    @media (max-width: 768px) {
+    @media only all and (max-width: 768px)  {
       .small-width  {
         width: 410px;
       }
@@ -179,4 +179,126 @@ top: calc(var(--height) * -0.5);
 }
 
 }
+
+
+
+/* iphone SE  */
+/* @media only screen and (height: 667px)
+{
+  .hero-icon{
+      margin-top: 10px;
+    position: absolute;
+width: 200.38px;
+height: 200.42px;
+left: 45%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 0px;
+  
+  }
+
+
+} */
+
+/* ----------- IPAD MINI ----------- */
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+    .hero-icon{
+      margin-top: 40px;
+    position: absolute;
+width: 280.38px;
+height: 240.42px;
+left: 63%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 75px;
+  
+  }
+
+}
+ */
+
+
+
+/* ----------- Galaxy S8+----------- */
+/* Portrait and Landscape */
+/* @media only screen and (-webkit-min-device-pixel-ratio: 4) {
+
+  .hero-icon{
+      margin-top: 7px;
+    position: absolute;
+width: 220.38px;
+height: 240.42px;
+left: 35%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 25px;
+  
+  }
+
+
+} */
+
+/* ----------- Iphone xr----------- */
+/* @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+      
+  .hero-icon{
+      margin-top: 10px;
+    position: absolute;
+width: 200.38px;
+height: 200.42px;
+left: 45%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 0px;
+  
+  }
+
+     } */
+
+
+
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- 
+
+Portrait and Landscape */
+ /* @media screen  
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {      
+  .hero-icon{
+      margin-top: 10px;
+    position: absolute;
+width: 200.38px;
+height: 200.42px;
+left: 40%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 0px;
+  
+  }
+
+} */
+
+/* iPhone 5 Retina regardless of IOS version */
+/* @media (device-height : 568px) 
+   and (device-width : 320px) 
+   and (-webkit-min-device-pixel-ratio: 2){
+    .hero-icon{
+      margin-top: 0px;
+    position: absolute;
+width: 200.38px;
+height: 100.42px;
+left: 40%;
+    }  .bg-hero{
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 0px;
+  
+  }
+} */
 </style>

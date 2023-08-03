@@ -13,13 +13,13 @@ function toggleMore() {
 
 <template>
     <Head title="Welcome" />
-    <header class="relative h-screen mb-12">
+    <header class="relative h-screen hero-h mb-12">
         <div class="text-2xl bg-opacity-10 rounded-xl mb-32">
             <img
                 id="bgvideo"
-                class="absolute z-10 w-auto min-w-full lg:h-[90vh] hero-h brightness-50"
+                class="absolute z-10 w-auto min-w-full lg:h-[90vh] hero-h brightness-50 hero-radius"
                 src="/img/bg-9.png"
-                type="video/mp4" style="border-bottom-right-radius: 300px;"
+                type="video/mp4" 
             />
 
             <Navbar />
@@ -29,21 +29,25 @@ function toggleMore() {
                 <div class="justify-start lg:px-4 text-white text-sm" >Las Vegas special Hotel packages</div> 
                 <div class="justify-end lg:pl-16 text-white text-sm">2 Nights, 3 days</div> 
                 </div>
-                <div class="absolute  z-40 search-top lg:mt-24 mt-32 flex inline-flex  flex-wrap justify-center">
+                <div class="absolute  z-40 search-top lg:mt-24 mt-32 flex lg:inline-flex lg:grid grid-cols-3 flex-wrap justify-center">
                     <div class="lg:px-10 md:py-6 px-5">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
-                        <input type="date" class="border rounded-sm text-sm sm:w-auto px-10 py-3"></div>
+                        <input type="date" class="border rounded-sm text-sm w-full min-w-full max-w-full  lg:px-10 py-3"></div>
                     <div class="lg:px-10 md:py-6">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
-                        <input type="date" class="border rounded-sm text-sm sm:w-auto lg:px-10 py-3 " required></div>
+                        <input type="date" class="border rounded-sm text-sm w-full min-w-full max-w-full  lg:px-10 py-3 " required></div>
                     <div class="lg:px-10 md:py-6 px-5">      
-                        <button class="text-white btn-red mt-6 font-medium rounded-sm text-sm sm:w-auto px-5 py-2.5 text-center lg:px-28 py-4 px-20"><i class="fa-solid fa-magnifying-glass"></i> Search offers</button>
+                        <button class="text-white btn-red mt-6 font-medium rounded-sm text-sm sm:w-auto px-5 py-2.5 text-center lg:px-28 py-4 w-full min-w-full max-w-full "><i class="fa-solid fa-magnifying-glass"></i> Search offers</button>
                     </div>
                 </div>
             </div>
 
-            <div class="flex justify-center ">
-                <div class="absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-4 py-4">
+
+        </div>
+    </header>
+    <section class="c-text">
+        <div class="flex justify-center block">
+                <div class="lg:absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-4 py-4">
                     <div class="col-span-1"></div>
 
                     <div
@@ -180,9 +184,6 @@ function toggleMore() {
                     <div class="col-span-1"></div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="c-text">
         <div class="flex justify-center py-6">
             <div class="flex flex-wrap lg:grid grid-cols-8 mr-0 z-30  px-4 py-4">
                 <div class="col-span-1"></div>
@@ -725,6 +726,9 @@ function toggleMore() {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
         0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.hero-radius{
+    border-bottom-right-radius: 300px;
+}
 .bg-hero {
     background: rgba(35, 33, 33, 0.76);
 }
@@ -738,9 +742,6 @@ function toggleMore() {
 }
 .btn-red {
     background: #ad0909;
-    float: right;
-    width: fit-content;
-    margin-left: auto;
 }
 .green-bg {
     background: #48742c;
@@ -752,7 +753,6 @@ function toggleMore() {
     top:30%;
 }
 .p-cad {
-    top: 65%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -774,16 +774,11 @@ function toggleMore() {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .small-width {
-        width: 410px;
-    }
-    .hidden-small {
-        display: block;
-    }
-    .hero-icon {
-        margin-top: 15px;
-    }
+@media only all and (max-width: 768px)   {
+    .c-text {
+    margin-top: 0px;
+    padding-bottom: 4rem;
+}
     .p-cad {
         top: 60%;
         font-size: 14px;
@@ -794,14 +789,17 @@ function toggleMore() {
         padding-bottom: 4rem;
     }
     .search-top1{
-    top:20%;
+    top:25%;
     }
     .search-top{
     top:18%;
     }
     .hero-h{
-        height: 90vh;
+        height: 70vh;
     }
+    .hero-radius{
+    border-bottom-right-radius: 0px;
+}
 
 }
 
@@ -820,4 +818,7 @@ function toggleMore() {
 }
 
 }
+
+
+
 </style>

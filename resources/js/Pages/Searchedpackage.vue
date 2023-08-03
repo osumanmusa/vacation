@@ -13,17 +13,17 @@ function toggleMore() {
 
 <template>
     <Head title="Welcome" />
-    <header class="relative h-screen mb-12">
+    <header class="relative h-screen hero-h mb-12">
         <div class="text-2xl bg-opacity-10 rounded-xl mb-32">
             <img
                 id="bgvideo"
-                class="absolute z-10 w-auto min-w-full hero-h lg:h-full brightness-50"
+                class="absolute z-10 w-auto min-w-full lg:h-[90vh] hero-h brightness-50 hero-radius"
                 src="/img/bg-9.png"
                 type="video/mp4" 
             />
 
             <Navbar />
-            <div class="flex justify-center visible">
+            <div class="flex justify-center visible t-date">
                 <div class="absolute search-top z-40 text-white lg:text-5xl">Choose your preferred hotel</div>
                 <div class="absolute flex pl-10 grid grid-cols-2 mt-20 search-top search-top2 z-40 ">
                 <div class="justify-start lg:px-4 text-white text-sm" >Las Vegas special Hotel packages</div> 
@@ -31,9 +31,13 @@ function toggleMore() {
                 </div>
                 
             </div>
+        </div>
+    </header>
+    <section class="c-text">
+        
 
-            <div class="flex justify-center">
-                <div class="absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-8">
+        <div class="flex justify-center block">
+                <div class="lg:absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-4 py-4">
                     <div class="col-span-1"></div>
 
                     <div
@@ -170,9 +174,6 @@ function toggleMore() {
                     <div class="col-span-1"></div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="c-text">
         <div class="flex justify-center py-12">
             <div class=" flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-8">
                 <div class="col-span-1"></div>
@@ -766,33 +767,27 @@ function toggleMore() {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .small-width {
-        width: 410px;
-    }
-    .hidden-small {
-        display: block;
-    }
-    .hero-icon {
-        margin-top: 15px;
-    }
+@media only all and (max-width: 768px)  {
+    .hero-radius{
+    border-bottom-right-radius: 0px;
+}
     .p-cad {
-        top: 45%;
+        top: 0px;
     }
     .p-text {
         padding-top: calc(3vh + 2rem);
     }
     .search-top{
-    top:25%;
+    top:40%;
     }
     .search-top2{
-    top:20%;
+    top:30%;
     }
     .hero-h{
-        height: 90vh;
+        height: 50vh;
     }
 .c-text {
-    margin-top: calc(60vh + 23rem);
+    margin-top: calc(1vh + 0rem);
     padding-bottom: 4rem;
 }
 }
@@ -807,6 +802,13 @@ function toggleMore() {
 .c-text {
     margin-top: calc(25vh + 15rem);
     padding-bottom: 4rem;
+}
+.i-md{
+    height:105vh;
+}
+
+.t-date{
+ margin-top: 50px;
 }
 
 }

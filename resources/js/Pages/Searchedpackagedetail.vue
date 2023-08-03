@@ -13,20 +13,21 @@ function toggleMore() {
 
 <template>
     <Head title="Welcome" />
-    <header class="relative h-screen mb-12">
+    <header class="relative  lg:mb-12 mb-4">
         <div
-            class="text-2xl h-screen bg-opacity-10 mb-32"
+            class="text-2xl lg:h-96 h-52 bg-opacity-10 lg:mb-32 mb-8"
             style="
                 background: url('/img/bg-9.png');
                 background-size: cover;
                 background-repeat: no-repeat;
+
             "
         >
             <Navbar />
         </div>
     </header>
 
-    <section class="lg:px-40 px-12">
+    <section class="lg:px-40 px-4">
         <div class="">
             <p class="text-3xl py-2">Rio All-Suite Hotel & Casino</p>
             <p class="text-base py-2" style="color: #aba6a6">

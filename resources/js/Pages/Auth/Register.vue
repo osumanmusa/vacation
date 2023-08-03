@@ -72,7 +72,7 @@ const submit = () => {
         </div>
         </div>
         <div class="flex justify-center py-3">
-            <span style="color: #ABA6A6" >Already have an account?</span><a href="/login" style="color: #132A7B">Sign in</a>
+            <span style="color: #ABA6A6" >Already have an account? </span><a href="/login" style="color: #132A7B"> Sign in</a>
         </div>
 
 

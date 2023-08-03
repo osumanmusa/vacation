@@ -15,21 +15,26 @@ function toggleMore(){
 <template>
     <Head title="Welcome" />
     <header
-  class="relative h-screen mb-12  "
+  class="relative lg:h-screen h-full mb-12  "
 >
-<div class="  text-2xl  bg-opacity-10 rounded-xl mb-32" >
+<div class="  text-2xl  bg-opacity-10 rounded-xl lg:mb-32" >
    
   <video autoplay muted loop id="bgvideo" class="absolute z-10 w-auto min-w-full hero-h  lg:max-w-full brightness-50 ">
   <source src="/img/pbg.mp4" type="video/mp4">
 </video>
         <Navbar/>
-<div class="flex justify-center ">
-<div class="absolute flex grid lg:grid-cols-12 mr-0 z-30   p-cad  px-6">
+
+
+</div>
+</header>
+<section class="c-text">
+  <div class="flex justify-center block">
+<div class="lg:absolute flex grid lg:grid-cols-12 mr-0 z-30   p-cad  px-6">
 <div class="col-span-2 "></div>
 
 <div class=" col-span-4 rounded rounded-lg shadow-md right-0  h-80 w-full lg:h-[98vh] lg:w-[50vw]" style="background: url('/img/r-1.png');background-repeat: no-repeat;background-size: cover;">
-<div class="lg:mt-40 lg:mr-20 mt-24">
-  <img src="/img/quote.png" class=" h-[25vh] w-[35vw] lg:h-[35vh] lg:w-[20vw]  mx-auto object-cover" />
+<div class="lg:mt-40 cert-img mt-24">
+  <img src="/img/quote.png" class=" h-[25vh]  lg:h-[35vh] lg:w-[20vw]  mx-auto object-cover" />
 
 </div>
 </div>
@@ -90,9 +95,7 @@ function toggleMore(){
 
 </div>
 </div>
-
-</div>
-</header>
+</section>
 <section class="container-fluid p-text ">
   <div class="flex justify-center ">
     <h1 class="font-bold text-2xl px-5">Need More Information?</h1>
@@ -142,6 +145,10 @@ background:  rgba(35, 33, 33, 0.76);
   margin-left: auto;
   margin-right: auto;
 }
+.cert-img{
+  margin-right: 15vw;
+  margin-top: 32vh;
+}
 .btn-pcard{
 float: right;
 margin-top: 1em;
@@ -162,8 +169,110 @@ background: #F4F4F4;;
       display: block;
     }
 
-    @media (max-width: 768px) {
-      .small-width  {
+    @media only all and (max-width: 768px)  {
+
+      .c-text {
+    margin-top: 0px;
+    padding-bottom: 4rem;
+}
+
+    .hero-icon{
+      margin-top: 15px;
+    }
+    .p-cad{
+      top: 20%;
+    }
+    .cert-img{
+  margin-right: 3vw;
+  margin-top: 5vh;
+}
+
+    .p-text{
+  padding-top:calc(3vh + 1rem);
+  padding-bottom: 4rem;
+  background: #F4F4F4;
+}
+    }
+
+
+.showmore-enter-active,
+.showmore-leave-active {
+    transition: opacity 0.2s ease-out;
+}
+.showmore-enter,
+.showmore-leave-to {
+    opacity: 0;
+}
+
+
+/* iphone 12 PRO */
+/* @media only screen and (min-width: 390px)
+{
+    .p-text{
+  padding-top:calc(3vh + 20rem);
+  padding-bottom: 4rem;
+  background: #F4F4F4;
+}
+
+} */
+
+
+/* iphone SE  */
+/* @media only screen and (height: 667px)
+{
+    .p-text{
+  padding-top:calc(3vh + 29rem);
+  padding-bottom: 4rem;
+  background: #F4F4F4;
+}
+.cert-img{
+  margin-right: 3vw;
+  margin-top: 12vh;
+}
+
+} */
+
+
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+/* @media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .cert-img{
+  margin-right: 3vw;
+  margin-top: 15vh;
+}
+
+
+} */
+
+
+/* ----------- Galaxy fold ----------- */
+/* @media (min-width: 280px) and (max-width: 320px) {
+  .cert-img{
+  margin-right: 3vw;
+  margin-top: 12vh;
+}
+  
+  
+  
+  } */
+
+
+
+
+/* ----------- IPAD MINI ----------- */
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+  .cert-img{
+  margin-right: 3vw;
+  margin-top: 12vh;
+}
+.small-width  {
         width: 410px;
       }
       .hidden-small {
@@ -175,45 +284,25 @@ background: #F4F4F4;;
     .p-cad{
       top: 20%;
     }
-
     .p-text{
-  padding-top:calc(3vh + 15rem);
-  padding-bottom: 4rem;
-  background: #F4F4F4;
-}
-    }
-
-
-    .showmore-enter-active,
-.showmore-leave-active {
-    transition: opacity 0.2s ease-out;
-}
-.showmore-enter,
-.showmore-leave-to {
-    opacity: 0;
-}
-
-
-/* iphone 12 PRO */
-@media only screen and (min-width: 390px)
-{
-    .p-text{
-  padding-top:calc(3vh + 20rem);
+  padding-top:calc(3vh + 6rem);
   padding-bottom: 4rem;
   background: #F4F4F4;
 }
 
+} */
+
+/* ----------- Galaxy S8+----------- */
+
+/* Portrait and Landscape */
+/* 
+@media only screen and (-webkit-min-device-pixel-ratio: 4) {
+
+  .cert-img{
+  margin-right: 3vw;
+  margin-top: 11vh;
 }
 
-
-/* iphone SE  */
-@media only screen and (min-height: 667px)
-{
-    .p-text{
-  padding-top:calc(3vh + 29rem);
-  padding-bottom: 4rem;
-  background: #F4F4F4;
-}
-
-}
+  
+} */
 </style>

@@ -5,7 +5,7 @@ let showMenu = ref(false);
     const toggleNav = () => (showMenu.value = !showMenu.value);
 </script>
 <template>
-<section class="footer-bg p-16">
+<section class="footer-bg p-6">
 <div class="flex flex-wrap lg:grid md:grid-cols-12 md:gap-6 justify-center lg:px-40">
     <div class="col-span-4 max-w-sm overflow-hidden text-white">
         <h1>

@@ -15,7 +15,7 @@ function toggleMore(){
 <template>
     <Head title="Welcome" />
     <header
-  class="relative h-screen mb-12  "
+  class="relative lg:h-screen h-full mb-12  "
 >
 <div class="  text-2xl  bg-opacity-10 rounded-xl mb-32" >
    
@@ -23,8 +23,14 @@ function toggleMore(){
   src="/img/pd-bg.png" type="video/mp4"/>
 
         <Navbar/>
-<div class="flex justify-center ">
-<div class="absolute flex grid lg:grid-cols-12 mr-0 z-30 gap-4  p-cad lg:px-0  px-8">
+
+</div>
+</header>
+
+<section class="c-text">
+  
+<div class="flex justify-center block">
+<div class="lg:absolute flex grid lg:grid-cols-12 mr-0 z-30 gap-4  p-cad lg:px-0  px-8">
 <div class="col-span-2 "></div>
 
 <div class=" col-span-4 rounded rounded-lg shadow-md right-0 green-bg text-white" >
@@ -130,12 +136,8 @@ function toggleMore(){
 
 </div>
 </div>
-
-</div>
-</header>
-
-
-<section class="py-16 p-text">
+</section>
+<section class="lg:py-16 py-6 p-text">
     <div>
         <div class="flex flex-wrap lg:grid md:grid-cols-12 md:gap-6 justify-center px-16">
             <div class="col-span-3 max-w-sm rounded overflow-hidden mb-10">
@@ -233,31 +235,18 @@ background:  rgba(35, 33, 33, 0.76);
   padding-bottom: 4rem;
   background: #F4F4F4;;
 }
-.strike{
-  padding: 20px;
-}
-.exclusive-bg{
-background: #F4F4F4;;
-}
-.hidden-small {
-      display: block;
-    }
 
-    @media (max-width: 768px) {
-      .small-width  {
-        width: 410px;
-      }
-      .hidden-small {
-      display: block;
-    }
-    .hero-icon{
-      margin-top: 15px;
-    }
+
+    @media only all and (max-width: 768px) {
     .p-cad{
       top: 20%;
     }
+    .c-text {
+    margin-top: 04px;
+    padding-bottom: 4rem;
+}
     .p-text{
-  padding-top:calc(20vh + 54rem);
+  padding-top:calc(4vh + 4rem);
   padding-bottom: 4rem;
   background: #F4F4F4;
 }

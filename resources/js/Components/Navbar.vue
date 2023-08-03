@@ -6,7 +6,7 @@ let showMenu = ref(false);
 </script>
 <template>
     
-	<nav class="sticky top-0 nav px-4 py-4 flex justify-between items-center bg-transparent   overflow-hidden">
+	<nav class="sticky top-0 nav px-4 py-6 flex justify-between items-center bg-transparent   overflow-hidden">
 		<a class="text-3xl font-bold leading-none mx-16" href="/">
 			<img :src="'/img/logo.png'" class="h-8"/>
 		</a>
