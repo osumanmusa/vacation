@@ -127,7 +127,7 @@ function toggleMore() {
 
         <div>
             <p class="text-xl">Choose your room</p>
-                <div class="flex lg:grid grid-cols-3  gap-0 py-1">
+                <div class="flex  lg:grid lg:grid-cols-3   gap-0 py-1">
                     <div class="px-2 text-base py-2">
                     <p class="">Superior Room, 1 Double Bed</p>
                     </div>
@@ -234,18 +234,7 @@ function toggleMore() {
 }
 
 @media (max-width: 768px) {
-    .small-width {
-        width: 410px;
-    }
-    .hidden-small {
-        display: block;
-    }
-    .hero-icon {
-        margin-top: 15px;
-    }
-    .p-cad {
-        top: 30%;
-    }
+
     .p-text {
         padding-top: calc(5vh + 2rem);
         padding-bottom: 4rem;

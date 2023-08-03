@@ -19,23 +19,23 @@ function toggleMore(){
 >
 <div class="  text-2xl  bg-opacity-10 rounded-xl mb-32" >
    
-  <video autoplay muted loop id="bgvideo" class="absolute z-10 w-auto min-w-full   lg:max-w-full brightness-50 ">
+  <video autoplay muted loop id="bgvideo" class="absolute z-10 w-auto min-w-full hero-h  lg:max-w-full brightness-50 ">
   <source src="/img/pbg.mp4" type="video/mp4">
 </video>
         <Navbar/>
 <div class="flex justify-center ">
-<div class="absolute flex grid lg:grid-cols-12 mr-0 z-30   p-cad  ">
-<div class="col-span-1 "></div>
+<div class="absolute flex grid lg:grid-cols-12 mr-0 z-30   p-cad  px-6">
+<div class="col-span-2 "></div>
 
-<div class=" col-span-5 rounded rounded-lg shadow-md right-0 lg:h-[98vh] lg:w-[50vw]" style="background: url('/img/r-1.png');background-repeat: no-repeat;background-size: cover;">
-<div class="lg:mt-40 lg:mr-20">
-  <img src="/img/quote.png" class="  lg:h-[35vh] lg:w-[20vw]  mx-auto object-cover" />
+<div class=" col-span-4 rounded rounded-lg shadow-md right-0  h-80 w-full lg:h-[98vh] lg:w-[50vw]" style="background: url('/img/r-1.png');background-repeat: no-repeat;background-size: cover;">
+<div class="lg:mt-40 lg:mr-20 mt-24">
+  <img src="/img/quote.png" class=" h-[25vh] w-[35vw] lg:h-[35vh] lg:w-[20vw]  mx-auto object-cover" />
 
 </div>
 </div>
 
 
-<div class="col-span-5 pl-6  rounded  bg-white shadow-md ml-0 flex flex-col ">
+<div class="col-span-4 pl-6  rounded  bg-white shadow-md ml-0 flex flex-col ">
 <h1 class="py-6 ">
   Enjoy your Las Vegas Package
 </h1>
@@ -86,7 +86,7 @@ function toggleMore(){
 <a href="/packagedetails" class="btn-red text-white text-lg py-4 px-6  mt-auto">
    See what’s inside this package for you <img src="/img/enter.png" class="inline-flex"/> </a>
 </div>
-<div class="col-span-1"></div>
+<div class="col-span-2"></div>
 
 </div>
 </div>
@@ -173,10 +173,11 @@ background: #F4F4F4;;
       margin-top: 15px;
     }
     .p-cad{
-      top: 30%;
+      top: 20%;
     }
+
     .p-text{
-  padding-top:calc(3vh + 29rem);
+  padding-top:calc(3vh + 15rem);
   padding-bottom: 4rem;
   background: #F4F4F4;
 }
@@ -192,4 +193,27 @@ background: #F4F4F4;;
     opacity: 0;
 }
 
+
+/* iphone 12 PRO */
+@media only screen and (min-width: 390px)
+{
+    .p-text{
+  padding-top:calc(3vh + 20rem);
+  padding-bottom: 4rem;
+  background: #F4F4F4;
+}
+
+}
+
+
+/* iphone SE  */
+@media only screen and (min-height: 667px)
+{
+    .p-text{
+  padding-top:calc(3vh + 29rem);
+  padding-bottom: 4rem;
+  background: #F4F4F4;
+}
+
+}
 </style>

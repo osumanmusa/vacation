@@ -3,7 +3,12 @@ import { Head, Link } from '@inertiajs/vue3';
 import Navbar from "../Components/Navbar.vue";
 import Footer from "../Components/Footer.vue";
 import { ref,  onMounted  } from 'vue';
+import DateRangePicker from 'flowbite-datepicker/DateRangePicker';
+import { initFlowbite } from 'flowbite'
+onMounted(() => {
+    initFlowbite();
 
+})
 </script>
 
 <template>
@@ -12,13 +17,14 @@ import { ref,  onMounted  } from 'vue';
   class="relative contaier-fluid   h-screen mb-12 overflow-hidden "
 >
 <div class="text-2xl text-white bg-opacity-10 rounded-xl mb-32" >
-    <video autoplay muted loop id="bgvideo" class="absolute z-10 w-auto min-w-full min-h-full max-w-none lg:max-w-full brightness-50 ">
+    <video autoplay muted loop id="bgvideo" class="absolute z-10 w-auto min-w-full min-h-full max-w-none lg:max-w-full ">
   <source src="/img/bg.mp4" type="video/mp4">
 </video>
         <Navbar/>
 
 <div class="relative container z-30 grid lg:grid-cols-12  mt-24  px-3">
-<div class="p-12 col-span-4 bg-hero lg:ml-10 rounded rounded-lg shadow-md ">
+  <div class="col-span-1"></div>
+<div class="p-12 col-span-4 bg-hero  rounded rounded-lg shadow-md ">
   <div>
     <img src="/img/icon1.png" class="hero-icon z-0"/>
   </div>
@@ -28,13 +34,13 @@ import { ref,  onMounted  } from 'vue';
     </p>
   </div>
   <form>
-  <div class="mb-6">
+  <div id="date-rangepicker"  class="mb-6">
     <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white"><i class="fa fa-calendar-days" style="color: rgba(217, 217, 217, 0.48);"></i> Check-In</label>
-    <input type="date" class="hero-input border text-white text-sm rounded-lg focus:ring-gray-50 focus:border-gray-50block w-full p-2.5 "  required>
+    <input name="start" type="date" class="hero-input border text-white text-sm rounded-lg focus:ring-gray-50 focus:border-gray-50block w-full p-2.5 "  required>
   </div>
   <div class="mb-6">
     <label for="password" class="block mb-2 text-sm font-medium text-white dark:text-white"><i class="fa fa-calendar-days" style="color: rgba(217, 217, 217, 0.48);"></i> Check-out</label>
-    <input type="date" class="hero-input border text-white text-sm rounded-lg focus:ring-gray-50 focus:border-gray-50 block w-full p-2.5 " required>
+    <input name="end" type="date" class="hero-input border text-white text-sm rounded-lg focus:ring-gray-50 focus:border-gray-50 block w-full p-2.5 " required>
   </div>
 
   <div class="mb-6 flex justify-center ">
@@ -51,6 +57,7 @@ import { ref,  onMounted  } from 'vue';
 </div>
 </header>
 <section class="container-fluid bg-white py-20 ">
+
   <div class="flex justify-center ">
     <h1 class="font-bold text-2xl px-5">We are YOUR exclusive Las Vegas Vacation Travel Club</h1>
   </div>
@@ -106,7 +113,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0
 }
 .bg-hero{
   
-background:  rgba(35, 33, 33, 0.76);
+background:  rgba(22, 21, 21, 0.76);
 
 }
 .hero-input{
@@ -117,11 +124,11 @@ background:  rgba(35, 33, 33, 0.76);
 }
 .hero-icon{
   
-  --height :  200.42px; 
+  --height :  225.42px; 
     position: absolute;
-width: 150.38px;
-height: var(--height);
-left: 20%;
+width: 220.38px;
+height: 200.42px;
+left: 25%;
 top: calc(var(--height) * -0.5);
 }
 
@@ -141,10 +148,35 @@ background: #F4F4F4;;
     }
     .hero-icon{
       margin-top: 15px;
+    position: absolute;
+width: 240.38px;
+height: 220.42px;
+left: 44%;
+top: calc(var(--height) * -0.5);
     }
+
+
     }
 
 
 
+    @media only screen and (min-width: 1440px)
+{ /* Your Styles... */ 
+  .bg-hero{
+  margin-left: 65px;
+  background:  rgba(22, 21, 21, 0.76);
+  margin-top: 65px;
+  
+  }
+  .hero-icon{
+  
+  --height :  155.42px; 
+    position: absolute;
+width: 280.38px;
+height: 240.42px;
+left: 25%;
+top: calc(var(--height) * -0.5);
+}
 
+}
 </style>

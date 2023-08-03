@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "flowbite": "^1.7.0",
+        "flowbite-datepicker": "^1.2.2",
         "pinia": "^2.1.4"
     }
 }

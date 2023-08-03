@@ -29,11 +29,11 @@ function toggleMore() {
                 <div class="justify-start lg:px-4 text-white text-sm" >Las Vegas special Hotel packages</div> 
                 <div class="justify-end lg:pl-16 text-white text-sm">2 Nights, 3 days</div> 
                 </div>
-                <div class="absolute  z-40 search-top lg:mt-24 mt-32 flex inline-flex lg:grid grid-cols-3 flex-wrap justify-center">
+                <div class="absolute  z-40 search-top lg:mt-24 mt-32 flex inline-flex  flex-wrap justify-center">
                     <div class="lg:px-10 md:py-6 px-5">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
                         <input type="date" class="border rounded-sm text-sm sm:w-auto px-10 py-3"></div>
-                    <div class="lg:px-10 md:py-6 px-5">
+                    <div class="lg:px-10 md:py-6">
                         <p><lable class="text-white text-sm" >Check-in</lable></p>
                         <input type="date" class="border rounded-sm text-sm sm:w-auto lg:px-10 py-3 " required></div>
                     <div class="lg:px-10 md:py-6 px-5">      
@@ -188,7 +188,7 @@ function toggleMore() {
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3  shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -197,7 +197,7 @@ function toggleMore() {
                 ></div>
 
                 <div
-                    class="col-span-3 pl-10 rounded bg-white shadow-md ml-0 flex flex-col"
+                    class="col-span-3 pl-10  bg-white shadow-md ml-0 flex flex-col"
                 >
                     <h1 class="pt-6 text-2xl">The STRAT Hotel, Casino and SkyPod</h1>
                     <p class="py-2">
@@ -321,7 +321,7 @@ function toggleMore() {
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3  shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -330,7 +330,7 @@ function toggleMore() {
                 ></div>
 
                 <div
-                    class="col-span-3 pl-10 rounded bg-white shadow-md ml-0 flex flex-col"
+                    class="col-span-3 pl-10  bg-white shadow-md ml-0 flex flex-col"
                 >
                     <h1 class="pt-6 text-3xl">Alexis Park Resort</h1>
                     <p class="py-2">
@@ -454,7 +454,7 @@ function toggleMore() {
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3  shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -463,7 +463,7 @@ function toggleMore() {
                 ></div>
 
                 <div
-                    class="col-span-3 pl-10 rounded bg-white shadow-md ml-0 flex flex-col"
+                    class="col-span-3 pl-10  bg-white shadow-md ml-0 flex flex-col"
                 >
                     <h1 class="pt-6 text-3xl">Fremont Hotel And Casino</h1>
                     <p class="py-2">
@@ -587,7 +587,7 @@ function toggleMore() {
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3  shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -596,7 +596,7 @@ function toggleMore() {
                 ></div>
 
                 <div
-                    class="col-span-3 pl-10 rounded bg-white shadow-md ml-0 flex flex-col"
+                    class="col-span-3 pl-10  bg-white shadow-md ml-0 flex flex-col"
                 >
                     <h1 class="pt-6 text-3xl">Mardi Gras Hotel & Casino</h1>
                     <p class="py-2">

@@ -17,23 +17,27 @@ function toggleMore() {
         <div class="text-2xl bg-opacity-10 rounded-xl mb-32">
             <img
                 id="bgvideo"
-                class="absolute z-10 w-auto min-w-full lg:h-full brightness-50"
+                class="absolute z-10 w-auto min-w-full hero-h lg:h-full brightness-50"
                 src="/img/bg-9.png"
-                type="video/mp4" style="border-bottom-right-radius: 350px;"
+                type="video/mp4" 
             />
 
             <Navbar />
             <div class="flex justify-center visible">
-                <div class="absolute search-top z-40 text-white text-5xl">Choose your preferred hotel</div>
-                <p class="absolute  z-40 search-top mt-20 text-white text-sm"><span class="justify-start px-4" >Las Vegas special Hotel packages</span> <span class="justify-end px-4">2 Nights, 3 days</span> </p>
+                <div class="absolute search-top z-40 text-white lg:text-5xl">Choose your preferred hotel</div>
+                <div class="absolute flex pl-10 grid grid-cols-2 mt-20 search-top search-top2 z-40 ">
+                <div class="justify-start lg:px-4 text-white text-sm" >Las Vegas special Hotel packages</div> 
+                <div class="justify-end lg:pl-16 text-white text-sm">2 Nights, 3 days</div> 
+                </div>
+                
             </div>
 
             <div class="flex justify-center">
-                <div class="absolute flex grid lg:grid-cols-8 mr-0 z-30 p-cad">
+                <div class="absolute flex-wrap lg:grid grid-cols-8 mr-0 z-30 p-cad px-8">
                     <div class="col-span-1"></div>
 
                     <div
-                        class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                        class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                         style="
                             background: url('/img/26.png');
                             background-repeat: no-repeat;
@@ -170,11 +174,11 @@ function toggleMore() {
     </header>
     <section class="c-text">
         <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+            <div class=" flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-8">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -303,11 +307,11 @@ function toggleMore() {
         </div>
 
         <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+            <div class=" flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-8">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -436,11 +440,11 @@ function toggleMore() {
         </div>
 
         <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+            <div class=" flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-8">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -569,11 +573,11 @@ function toggleMore() {
         </div>
 
         <div class="flex justify-center py-12">
-            <div class="flex grid lg:grid-cols-8 mr-0 z-30">
+            <div class=" flex-wrap lg:grid grid-cols-8 mr-0 z-30 px-8">
                 <div class="col-span-1"></div>
 
                 <div
-                    class="col-span-3 rounded rounded-lg shadow-md right-0 h-full lg:w-[50vw] h-[50vh] w-full"
+                    class="col-span-3 rounded rounded-lg shadow-md right-0 lg:h-full lg:w-[50vw] h-[50vh] w-full"
                     style="
                         background: url('/img/26.png');
                         background-repeat: no-repeat;
@@ -702,7 +706,9 @@ function toggleMore() {
         </div>
     </section>
 
-    <Footer class="p-text" />
+    
+    <Footer class="p-text"/>
+
 </template>
 
 <style scoped>
@@ -735,12 +741,12 @@ function toggleMore() {
     top:30%;
 }
 .p-cad {
-    top: 70%;
+    top: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 .c-text {
-    margin-top: calc(50vh + 15rem);
+    margin-top: calc(44vh + 15rem);
     padding-bottom: 4rem;
 }
 .p-text {
@@ -749,7 +755,10 @@ function toggleMore() {
 }
 .strike {
     padding: 20px;
-}
+} 
+.hero-h{
+        border-bottom-right-radius: 350px;
+    }
 .exclusive-bg {
     background: #f4f4f4;
 }
@@ -768,11 +777,37 @@ function toggleMore() {
         margin-top: 15px;
     }
     .p-cad {
-        top: 30%;
+        top: 45%;
     }
     .p-text {
-        padding-top: calc(5vh + 2rem);
-        padding-bottom: 4rem;
+        padding-top: calc(3vh + 2rem);
     }
+    .search-top{
+    top:25%;
+    }
+    .search-top2{
+    top:20%;
+    }
+    .hero-h{
+        height: 90vh;
+    }
+.c-text {
+    margin-top: calc(60vh + 23rem);
+    padding-bottom: 4rem;
+}
+}
+
+@media only screen and (min-width: 1440px)
+{ /* Your Styles... */ 
+    .p-cad {
+    top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.c-text {
+    margin-top: calc(25vh + 15rem);
+    padding-bottom: 4rem;
+}
+
 }
 </style>
